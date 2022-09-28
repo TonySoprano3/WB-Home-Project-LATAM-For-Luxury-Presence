@@ -1,0 +1,15 @@
+.swiper {
+    margin-top: 5rem;
+    width: 100%;
+    height: 55vh;
+  }
+  .swiper-slide img {
+    height: 40vh;
+    width: 500px;
+    object-fit: fill;
+  }
+ 
+  .swiper-hero {
+    width: 100%;
+    max-width: 1600px;
+  }

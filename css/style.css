@@ -1,0 +1,382 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:wght@200;300;400;500;700&display=swap');
+/*VARIABLES CSS*/
+
+:root {
+/*========== Colors ==========*/
+--main-color: #000;
+--second-color: #fff;
+--third-color: #d19d24;
+--four-color: #162d54;
+/*========== Normal Font Size ==========*/
+--text-small: 1.7rem;
+--text-normal: 1.9rem;
+/*========== Head Lines Size ==========*/
+--h1-size: 4rem;
+--h2-size: 3.4rem;
+--h3-size: 3rem;
+/*========== Navegation Bar Text Size ==========*/
+--ul-size: 1.8rem;
+/*========== Font weight ==========*/
+--font-extraLight: 200;
+--font-light: 300;
+--font-medium: 500;
+--font-semi-bold: 600;
+--font-bold: 700;   
+ /*========== Transitions ==========*/
+ --hover-transition: 0.3s;
+ /*========== Margenes Bottom ==========*/
+ --mb-0-25: .25rem;
+ --mb-0-5: .5rem;
+ --mb-0-75: .75rem;
+ --mb-1: 1rem;
+ --mb-1-25: 1.25rem;
+ --mb-1-5: 1.5rem;
+ --mb-2: 2rem;
+ --mb-2-5: 2.5rem;
+/*========== Section Padding ==========*/
+ --pd-8: 8rem;
+/*========== Flex Gap ==========*/
+  --gap-3: 3rem;
+/*========== Gradient ==========*/
+  --black-gradient: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+
+/*========== Tools ==========*/
+* {list-style: none; scroll-margin-top: -7rem;}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+    font-size: 62.5%; /* 1rem = 10px */
+    box-sizing: border-box;
+   
+}   
+img {max-width: 100%;}
+body {
+    margin: 0;
+    padding: 0;
+}
+textarea:focus, input:focus, input[type]:focus {outline: 0 none;}
+a {text-decoration: none;}
+/*========== Navbar ==========*/
+nav {
+    height: 3vh;
+    padding: 4.3rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--second-color);
+}
+nav a {
+    color: var(--main-color);
+    transition: var(--hover-transition);
+}
+
+nav li a:hover {color: var(--third-color);}
+
+nav .logo a {
+    white-space: pre;
+    margin-left: var(--mb-1);
+    width: 20%;
+    font-weight: var(--font-light);
+    font-size: var(--h3-size);
+    color: var(--third-color);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    font-size: var(--ul-size);
+}
+
+
+/*========== Header ==========*/
+header {
+    height: calc(100vh - 10.3rem);
+    background-image: var(--black-gradient), url("/media/Header.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    font-size: var(--h1-size);
+    color: var(--second-color);
+    text-transform: uppercase;
+}
+header strong {
+    color: var(--second-color);
+    font-size: var(--text-normal);
+    font-weight: var(--font-light);
+}
+header strong b {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--third-color);
+}
+header h2 {
+    font-size: var(--h2-size);
+    color: var(--third-color);
+    font-weight: var(--font-medium);
+    text-decoration: underline;
+}
+
+header button {
+    background: none;
+    border: none;
+    font-size: 5rem;
+    position: absolute;
+    bottom: 9vh;
+    animation: move 1.1s infinite ease-in-out;
+    color: var(--second-color);
+    width: 3rem;
+    cursor: pointer;
+}
+
+@keyframes move{
+  0%{margin-top:0;}
+  50%{bottom: 4.5rem;}
+  100%{margin-top:0;}
+}
+ /*========== Phone ==========*/
+.phone {
+    width: 3.6rem;
+    height: 3.6rem;
+    color: var(--second-color);
+    background-color: var(--third-color);
+    border-radius: 100%;
+    padding: 0.7rem;
+    cursor: pointer;
+
+    position: fixed;
+    left: 3.5vh;
+    bottom: 3.5vh;
+
+    z-index: 1;
+    
+    transition: var(--hover-transition);
+  
+}
+.phone:hover {
+    transform:scale(1.1);
+    color: var(--hover-filter);
+}
+/*========== Section Luxury ==========*/
+.lux-sec {
+    background-image: url(/media/LuxuryCopy.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    display: flex;
+    text-align: justify;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70vh;
+}
+.lux-sec h2 {font-weight: 500;}
+ .lux-sec_art {
+    padding: var(--pd-8);
+    width: 100%;
+    backdrop-filter: blur(0.7rem);
+    color: var(--main-color);
+    font-size: var(--text-normal);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: var(--font-light);
+ }
+ .lux-sec_art span {
+    color: var(--third-color);
+    font-weight: var(--font-bold);
+    text-transform: uppercase;
+ }
+/*========== Section Luxury How ==========*/
+.lux-how {
+    padding: var(--pd-8);
+    text-align: center;
+    height: calc(100vh - 3.5rem);
+    font-size: var(--text-normal);
+    font-weight: var(--font-light);
+}
+.lux-how h2 {
+    font-weight: var(--font-medium);
+    font-size: var(--h1-size);
+    color: var(--third-color);
+}
+.lux-how h3 {font-size: var(--h3-size);}
+.m {color: #0668E1;}
+.g {color: #4285F4;}
+.o { color: #EA4335;}
+.oo {color: #FBBC05;}
+.gg {color:#4285F4;}
+.l {color: #34A853;}
+.e {color: #EA4335;}
+.i {color: #E1306C;}
+
+.t {
+    border-radius: 33%;
+    background-color: #ff0000;
+    padding: 3px;
+    color: #fff;
+    font-weight: var(--font-medium);
+}
+
+/*========== Newsletter ==========*/
+.newsletter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: var(--pd-8);
+    gap: var(--gap-3);
+    color: var(--second-color);
+    background-color: var(--main-color);
+    
+}
+.newsletter div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border: 10px solid var(--second-color);
+}
+.newsletter input {
+    width: 30rem;
+    height: 4rem;
+    border: var(--third-color);
+    font-size: var(--text-normal);
+}
+.newsletter input:focus {
+    color: var(--third-color);
+}
+.newsletter h3 {
+    margin: 0;
+    font-weight: var(--font-light);
+    font-size: 5.5rem;
+}
+.btn {
+    text-decoration: none;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    background-color: var(--second-color);
+    padding: 1rem 3rem;
+    font-size: var(--text-small);
+    font-weight: var(--font-medium);
+    transition: var(--hover-transition);
+}
+.btn:hover {
+    background-color: var(--main-color);
+    border: 1.1px solid var(--second-color);
+    color: var(--second-color);
+    
+  }
+  /*========== Article 1 & 2 ==========*/
+  .artc {
+    height: calc(100vh - 5rem);
+    display: flex;
+    align-items: center;
+    gap: var(--gap-3);
+    padding: var(--pd-8);
+  }
+  .artc article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--text-normal);
+    text-align: center;
+  }
+  .artc h2 {
+    font-size: var(--h1-size);
+    font-weight: var(--font-medium);
+  }
+ .artc img {
+    width: 600px;
+    height: 500px;
+    filter: brightness(0.9);
+ }
+ .artc h2 span {
+    color: var(--third-color);
+ }
+ .artc span {
+    color: var(--third-color);
+    font-weight: var(--font-medium);
+ }
+ /*========== Article 3 ==========*/
+ .artc-3 {
+    height: calc(100vh - var(--pd-8));
+    background-image: var(--black-gradient), url(/media/Miami.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: var(--text-normal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: var(--pd-8);
+    color: var(--second-color);
+ }
+ .artc-3 p {
+    white-space: pre-wrap;
+ }
+ .artc-3 h2 {
+    font-size: var(--h1-size);
+    font-weight: var(--font-light);
+    color: var(--third-color);
+ }
+ 
+  /*========== Footer ==========*/
+  footer hr { 
+    width: 95%;
+    margin-top: var(--mb-2-5);
+  }
+  footer div {
+    padding-top: var(--pd-8);
+    background-color: var(--main-color);
+    color: var(--second-color);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    text-align: justify;
+    height: 100%;
+  }
+  footer h3 {
+    margin: 0;
+    font-size: var(--h3-size);
+    font-weight: var(--font-medium);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-data {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-data p {
+    font-size: var(--text-small);
+  }
+  .footer-data ul {
+   font-size: var(--text-small);
+   width: 100%;
+   display: flex;
+   gap: var(--gap-3);
+   flex-direction: column;
+  }
+  .footer-data li {
+    transition: var(--hover-transition);
+  }
+.icon i {
+   margin: var(--mb-2) 0 0 var(--mb-2);
+   font-size: 2.8rem;
+   transition: var(--hover-transition);
+}
+.icon i:hover, .footer-data li:hover {
+    color: var(--third-color);
+    cursor: pointer;
+}

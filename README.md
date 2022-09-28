@@ -8,3 +8,5 @@ Live Site: (https://resilient-chimera-a053ab.netlify.app/)
 Code: (https://github.com/TonySoprano3/WB-Home-Project-LATAM-For-Luxury-Presence)
 
 #Made with: CSS.
+
+Linkedin (https://www.linkedin.com/in/lautaro-ortiz-b79866235)

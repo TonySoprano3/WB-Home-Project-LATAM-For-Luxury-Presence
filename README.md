@@ -9,4 +9,4 @@ Code: (https://github.com/TonySoprano3/WB-Home-Project-LATAM-For-Luxury-Presence
 
 #Made with: CSS.
 
-Linkedin (https://www.linkedin.com/in/lautaro-ortiz-b79866235)
+LinkedIn (https://www.linkedin.com/in/lautaro-ortiz-b79866235)
